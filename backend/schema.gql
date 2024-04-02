@@ -1,0 +1,52 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type CompanyPriceCloseModel {
+  date: DateTime!
+  price: Float!
+  dateCreated: DateTime!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type CompanyScoreModel {
+  id: Float!
+  dateGenerated: DateTime!
+  dividend: Float!
+  future: Float!
+  health: Float!
+  management: Float!
+  past: Float!
+  value: Float!
+  misc: Float!
+  total: Float!
+  sentence: String!
+}
+
+type CompanyModel {
+  id: String!
+  name: String!
+  tickerSymbol: String!
+  exchangeSymbol: String!
+  uniqueSymbol: String!
+  dateGenerated: DateTime!
+  securityName: String!
+  exchangeCountryIso: String!
+  listingCurrencyIso: String!
+  canonicalUrl: String!
+  uniqueSymbolSlug: String!
+  score: CompanyScoreModel!
+  prices: [CompanyPriceCloseModel!]!
+  lastPriceClose: CompanyPriceCloseModel!
+}
+
+type Query {
+  companies: [CompanyModel!]!
+  scores: [CompanyScoreModel!]!
+  score(companyId: String!): CompanyScoreModel!
+  pricesByCompany(companyId: String!): [CompanyPriceCloseModel!]!
+}
