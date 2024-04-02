@@ -3,9 +3,11 @@
 - NodeJS v20
 
 ## Deployed application:
+- Backend: https://simply-wall-challenge.onrender.com/graphql
 
 ## Tech stack
-- NestJS + GraphQL + sqlite
+- Backend: NestJS + GraphQL + sqlite
+- Frontend: Vite + React + GraphQL + MUI X (Data Grid)
 
 ## Backend setup
 ```bash
