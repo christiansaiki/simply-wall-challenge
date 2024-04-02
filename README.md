@@ -18,6 +18,8 @@ npm start
 ```
 The application with be running at http://localhost:3000/graphql
 
+For more information about the backend please refer to the [backend README](backend/README.md)
+
 ## Query examples
 ```graphql
 # prices by company (AfterPay)

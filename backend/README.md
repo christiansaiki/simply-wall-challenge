@@ -29,3 +29,6 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+## Deployment
+- The repo is being deployed to [Render](https://render.com/) with every push to main
