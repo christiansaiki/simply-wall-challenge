@@ -21,6 +21,7 @@ const entities =
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       autoSchemaFile: 'schema.gql',
+      playground: true,
     }),
     TypeOrmModule.forRoot({
       type: 'sqlite',

@@ -52,6 +52,4 @@ The application with be running at http://localhost:3000/graphql
     }
   }
 }
-
-
 ```
