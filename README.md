@@ -4,7 +4,11 @@
 
 ## Deployed application:
 - Backend (graphql playground): https://simply-wall-challenge.onrender.com/graphql
+  ![image](https://github.com/christiansaiki/simply-wall-challenge/assets/7768082/47f8c072-3d59-4c57-8cdf-267610ad04be)
+
 - Frontend: https://simply-wall-challenge.vercel.app/
+  ![image](https://github.com/christiansaiki/simply-wall-challenge/assets/7768082/bb5c270f-b593-4c2e-859e-f7d079423591)
+
 
 Caveat: the backend server is put on freeze mode after 15 minutes of being unused, it takes about 30 seconds for it to come alive again. So, don't strange if it doesn't load super quick at the first time.
 For more details: https://community.render.com/t/slow-server-response/13392
