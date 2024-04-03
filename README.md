@@ -3,7 +3,11 @@
 - NodeJS v20
 
 ## Deployed application:
-- Backend: https://simply-wall-challenge.onrender.com/graphql
+- Backend (graphql playground): https://simply-wall-challenge.onrender.com/graphql
+- Frontend: https://simply-wall-challenge.vercel.app/
+
+Caveat: the backend server is put on freeze mode after 15 minutes of being unused, it takes about 30 seconds for it to come alive again. So, don't strange if it doesn't load super quick at the first time.
+For more details: https://community.render.com/t/slow-server-response/13392
 
 ## Tech stack
 - Backend: NestJS + GraphQL + sqlite
@@ -19,6 +23,17 @@ npm start
 The application with be running at http://localhost:3000/graphql
 
 For more information about the backend please refer to the [backend README](backend/README.md)
+
+## Frontend setup
+```bash
+# from the project root
+cd frontend
+npm i
+npm run dev
+```
+The application with be running at http://localhost:5173
+
+For more information about the frontend please refer to the [frontend README](frontend/README.md)
 
 ## Query examples
 ```graphql
