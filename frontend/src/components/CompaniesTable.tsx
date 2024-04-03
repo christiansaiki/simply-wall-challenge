@@ -36,7 +36,7 @@ const CompaniesTable = () => {
             showQuickFilter: true,
           }
         }}
-        pageSizeOptions={[25, 100]}
+        pageSizeOptions={[10, 25, 100]}
       />
     );
   }
